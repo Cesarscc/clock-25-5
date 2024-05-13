@@ -1,0 +1,124 @@
+body{
+    background-color: #1e555c;
+    font-size: 30px;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #13353a;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    h1{
+        text-align: center;
+    }
+}
+#clock {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    #break-components {
+            display: flex;
+            flex-direction: column;
+            #break-functions {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #break-decrement,
+                #break-increment {
+                    cursor: pointer;
+                }
+                #break-length {
+                    text-align: center;
+                    width: 40px;
+                }
+            }
+        }
+        #session-components {
+            display: flex;
+            flex-direction: column;
+            #session-functions {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #session-decrement,
+                #session-increment {
+                    cursor: pointer;
+                }
+                #session-length {
+                    text-align: center;
+                    width: 40px;
+                }
+            }
+        }
+}
+
+@media screen and (min-width:530px) {
+    main {
+            width: 500px;
+        }
+
+    #clock {
+            width: 100%;
+            flex-direction: row;
+        }
+}
+
+
+#timer{
+    position: relative;
+    width: 270px;
+    height: 160px;
+    border: 7px solid #13353a;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-timer {
+    width: 190px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#time-left {
+    font-size: 80px;
+}
+
+.text-color {
+    color: rgb(165, 13, 13);
+}
+
+#options-buttons{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    #start_stop{
+        cursor: pointer;
+    }
+    #reset{
+        cursor: pointer;
+    }
+}
